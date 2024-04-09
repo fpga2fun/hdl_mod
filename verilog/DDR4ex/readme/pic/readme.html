@@ -1,0 +1,589 @@
+<!DOCTYPE html><html><head>
+      <title>readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\xujiang\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.11\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview {
+  font-family: Microsoft YaHei;
+  /* prince设置参数 */
+}
+.markdown-preview.markdown-preview.prince {
+  /* 添加页码 */
+}
+@page {
+  @bottom {
+    font-family: Microsoft YaHei;
+    content: counter(page) " / " counter(pages);
+  }
+  @page {
+    size: A4 landscape;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<ul>
+<li><a href="#%E5%9F%BA%E4%BA%8Exilinx-mig-ddr4-axi4%E8%AE%BF%E9%97%AEexample">基于xilinx MIG DDR4 axi4访问example</a>
+<ul>
+<li><a href="#example%E7%94%9F%E6%88%90steps">example生成steps</a></li>
+</ul>
+</li>
+<li><a href="#ddr%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86">DDR基础知识</a></li>
+<li><a href="#mig-%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E">MIG 配置说明</a>
+<ul>
+<li><a href="#memory-controller">Memory Controller</a></li>
+<li><a href="#phy">Phy</a></li>
+</ul>
+</li>
+<li><a href="#jedec-standard">JEDEC Standard</a>
+<ul>
+<li><a href="#pinout-description">Pinout Description</a></li>
+<li><a href="#state-diagram-command-definitions">State Diagram Command Definitions</a></li>
+<li><a href="#basic-functional-description">Basic Functional Description</a></li>
+<li><a href="#reset-and-initialization-procedure">RESET and Initialization Procedure</a></li>
+<li><a href="#register-definition">Register Definition</a>
+<ul>
+<li><a href="#programming-mode-registers">Programming Mode Registers</a></li>
+<li><a href="#mode-register">Mode Register</a></li>
+</ul>
+</li>
+<li><a href="#command-truth-table">Command Truth Table</a>
+<ul>
+<li><a href="#activate-command">ACTIVATE Command</a></li>
+<li><a href="#precharge-command">PRECHARGE Command</a></li>
+<li><a href="#refresh-command">REFRESH Command</a></li>
+<li><a href="#read-operation">READ Operation</a></li>
+<li><a href="#write-operation">WRITE Operation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="基于xilinx-mig-ddr4-axi4访问example">基于xilinx MIG DDR4 axi4访问example </h1>
+<blockquote>
+<p>以xczu2eg芯片通过MIG 配置单颗 MT40A256M16 DDR4颗粒仿真为例。</p>
+</blockquote>
+<h2 id="example生成steps">example生成steps </h2>
+<blockquote>
+<p>此处只介绍生产example的步骤，相关过程中的介绍在后续展开详细说明。</p>
+</blockquote>
+<ol>
+<li>找到ip<br>
+<img src="image-2.png" alt="找到MIGip"></li>
+<li>配置ip<br>
+选项说明<br>
+<img src="image-3.png" alt="MIG Basic"><br>
+<img src="image-4.png" alt="MIG AXI"></li>
+<li>生成xilinx自带的仿真example</li>
+</ol>
+<ul>
+<li>等待ip综合完成后打开example<br>
+<img src="image-5.png" alt="gen Example"></li>
+</ul>
+<ol start="4">
+<li>仿真</li>
+</ol>
+<ul>
+<li>使用vvd仿真<br>
+直接开始仿真就行，可以run all，直到仿真自动停止。</li>
+<li>或者使用vcs仿真<br>
+<img src="image-6.png" alt="Export vcs"></li>
+<li>在sim_tb_top.sv加入fsdb选项</li>
+</ul>
+<pre data-role="codeBlock" data-info="verilog" class="language-verilog verilog"><code><span class="token keyword keyword-initial">initial</span>
+<span class="token keyword keyword-begin">begin</span>
+    <span class="token kernel-function property">$fsdbDumpfile</span><span class="token punctuation">(</span><span class="token string">"tb.fsdb"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token kernel-function property">$fsdbDumpvars</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>sim_tb_top<span class="token punctuation">,</span><span class="token string">"+all"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-end">end</span>
+</code></pre><ul>
+<li>修改sim_tb_top.sh<br>
+加入kdb选项以支持verdi<br>
+<img src="image-7.png" alt="vcs kdb"><br>
+编译时会提示缺少include`文件，需要加入仿真模型<br>
+<img src="image-8.png" alt="add include"></li>
+<li>bsub -Is ./sim_tb_top.sh &amp;</li>
+</ul>
+<ol start="5">
+<li>修改ddr4_v2_2_data_gen.sv</li>
+</ol>
+<pre data-role="codeBlock" data-info="verilog" class="language-verilog verilog"><code>      <span class="token important">always @</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword keyword-begin">begin</span>
+        lfsr_q_nxt <span class="token operator">&lt;=</span> lfsr_q<span class="token punctuation">;</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>pattern_init<span class="token punctuation">)</span> <span class="token keyword keyword-begin">begin</span> <span class="token comment">//pattern initialisation</span>
+        <span class="token comment">//lfsr_q_nxt &lt;= #TCQ {prbs_seed_i + 32'h55555555};</span>
+        lfsr_q_nxt <span class="token operator">&lt;=</span> #TCQ <span class="token operator">{</span>prbs_seed_i <span class="token operator">+</span> <span class="token number">32'h13572468</span><span class="token operator">}</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-end">end</span>
+        <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>data_en<span class="token punctuation">)</span> <span class="token keyword keyword-begin">begin</span> <span class="token comment">//generate next data packet</span>
+        <span class="token comment">// lfsr_q_nxt[32:9] &lt;= lfsr_q[31:8];</span>
+        <span class="token comment">// lfsr_q_nxt[8]    &lt;= lfsr_q[32] ^ lfsr_q[7];</span>
+        <span class="token comment">// lfsr_q_nxt[7]    &lt;= lfsr_q[32] ^ lfsr_q[6];</span>
+        <span class="token comment">// lfsr_q_nxt[6:4]  &lt;= lfsr_q[5:3];</span>
+        <span class="token comment">// </span>
+        <span class="token comment">// lfsr_q_nxt[3]    &lt;= lfsr_q[32] ^ lfsr_q[2];</span>
+        <span class="token comment">// lfsr_q_nxt[2]    &lt;= lfsr_q[1] ;</span>
+        <span class="token comment">// lfsr_q_nxt[1]    &lt;= lfsr_q[32];</span>
+        lfsr_q_nxt <span class="token operator">&lt;=</span> lfsr_q <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-end">end</span>
+    <span class="token keyword keyword-end">end</span>
+</code></pre><blockquote>
+<p>修改一下自动生成的数据，方便观察axi到dq的数据映射。不改也行。</p>
+</blockquote>
+<ol start="6">
+<li>简单看一下仿真波形</li>
+</ol>
+<ul>
+<li>先关注cmdName信号（设置为ASCII格式），仿真开始后经过一段时间的ACT/NPO后会进行MRS操作（圆圈处），之后init_complete拉高，axi总线动作，开始访问DDR。<br>
+<img src="image-9.png" alt="DDR Ob"></li>
+</ul>
+<h1 id="ddr基础知识">DDR基础知识 </h1>
+<ul>
+<li>半导体存储概念<br>
+<img src="image-10.png" alt="Memory"></li>
+<li>认识DDR 内存条<br>
+<img src="image-11.png" alt="DDR ex"><br>
+以一根DDR内存条为例，从大到小的层级结构依次是：channel ＞ DIMM ＞ rank ＞ chip ＞ bank ＞ row/column。<br>
+channel （对应多个DDR控制器）&gt; DIMM（内存插槽） &gt; rank（一次访问位宽决定，也成物理bank） &gt; chip（1个chip大多是4bit/8bit/16bit等，由多个chip组成一个rank，配合完成一次访问的位宽要求。这就是颗粒。） &gt; bank（颗粒里的logic-bank，DDR3一般对应8个bank存储体） &gt; row/column。<br>
+<img src="image-12.png" alt="DDR level"></li>
+<li>DDR Page的概念和理解</li>
+<li>DDR页的概念，是针对刷新或者访问来说的，举例，一个rank可能有4个chip组成，一个chip里可能有8个bank，每一个bank有N个行。页指的一个rank里每个chip里的所有bank的某个行地址；注意不是一行，是多行，行数是chip数目*bank数目。</li>
+<li>所以，DDR页，可以理解为一个rank里每个chip（所有bank）的行地址</li>
+<li>在一个rank里，每个chip的地址是相同的。因为多个chip组成一个总数据位宽。DDR接口的cs信号，虽然叫chip select，其实是rank（一chip）的 select。</li>
+<li>DDR页的概念，会涉及页命中、页miss等，跟cache page原理一样。</li>
+</ul>
+<h1 id="mig-配置说明">MIG 配置说明 </h1>
+<blockquote>
+<p>参考pg150</p>
+</blockquote>
+<ol>
+<li>Mode &amp; Interface<br>
+从左往右分别为：</li>
+</ol>
+<ul>
+<li>用户逻辑层：要送进DDR存储起来的数据源，比如CMOS，ADC等模块采集的数据集；</li>
+<li>用户接口层： xilinx mig有user interface和AXI4可选，此处使用AXI4；</li>
+<li>控制器层：<a href="#memory-controller">Memory Controller</a></li>
+<li>PHY 层：<a href="#phy">Phy</a></li>
+<li>DDR SDRAM: 实际接的内存芯片，仿真中使用的是sv写的仿真模型。</li>
+</ul>
+<ol start="2">
+<li>Clocking<br>
+Memory Device Interface Speed指实际的内存芯片使用的时钟，对应ddr4_ck_c/t信号，是一对差分时钟。<br>
+在MT40A256M16GE 的文档中可以看到083E速度等级对应的是2400MT/s数据传输速率，这个指的是每秒钟可以进行2400M次传输，因为DDR会在c/t时钟各自的上升沿分别传输一次，所以实际时钟频率为2400M/2=1200MHz=833ps。<br>
+<img src="image-14.png" alt="MT40 timing para"><br>
+PHY to controller click frequency ratio 固定为4:1;即Memory Controller的时钟为1200M/4=300MHz，也是用户接口层使用的时钟，ui_clk；<br>
+Ref Input Clk 可以自由选择，对应该MIG使用的系统时钟 c0_sys_clk_p,该example中选的100M；<br>
+<img src="image-15.png" alt="UI CLK"><br>
+<img src="image-16.png" alt="DDR CLK"><br>
+<img src="image-17.png" alt="Sys CLK"></li>
+<li>Memory Option<br>
+保持默认，具体参考DDRJEDEC</li>
+<li>Controller Option<br>
+MEM类型本例中选择MT40A256M16GE-083E,地址关系如下：<br>
+<img src="image-18.png" alt="MT40 ADDR"><br>
+BankGroup width=1；BankArry width=2；Column width =10；Row width=15；data width=16；<br>
+Page Size = 2<sup>10</sup>*16/8=2KB<br>
+单个颗粒的总大小为 2<sup>10</sup>*2<sup>15</sup>*2<sup>2</sup>*2<sup>1</sup>*16=256M*16=4Gb</li>
+</ol>
+<ul>
+<li><em>Memory Address Map</em></li>
+</ul>
+<blockquote>
+<p>参考pg150 P119app_addr词条</p>
+</blockquote>
+<p>推荐使用ROW_COLUMN_BANK的地址映射关系<br>
+<img src="image-19.png" alt="MEM_ADDR_ORDER"><br>
+5. AXI options<br>
+<img src="image-20.png" alt="AXI Opt"><br>
+<img src="image-21.png" alt="AXI ADDR Wid"><br>
+根据公式C_S_AXI_ADDR_WIDTH= 0+15+10+2+1+4-3=29<br>
+<img src="image-22.png" alt="AXI ADDR"><br>
+C_S_AXI_DATA_WIDTH=16*8=128</p>
+<blockquote>
+<p><em>axi_address[0]=0;</em></p>
+</blockquote>
+<p><img src="image-23.png" alt="AXI Byte Adr Map"><br>
+从这张表可以知道，当ddr的数据位宽为16时，AXI地址会在app接口地址上补一个最低位的0，也就是说如果这边不选择axi接口的话，app接口的地址线位宽为28；因为AXI4的数据位宽为128bits(16B),所以在INCR模式下传输时addr会累加16，即每个地址位存放的数据是128/16=8bits；但是映射到DDR的信号时，每个地址存放的是16bits(等同于数据位宽)，也就是说相同地址位的情况下，axi存放的数据量只有ddr存放数据量的1/2,所以要增加1位地址位宽才能使数据量相等。<br>
+<img src="image-25.png" alt="AXI INCR"><br>
+<img src="image-24.png" alt="app map"><br>
+再根据这张表我们可以得到该example中axi的地址在DDR4“row_columan_bank"顺序下的映射关系</p>
+<table>
+<thead>
+<tr>
+<th>SDRAM</th>
+<th>axi_addr mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rank</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Row</td>
+<td>axi_addr4[28:14]</td>
+</tr>
+<tr>
+<td>Column</td>
+<td>axi_addr4[13:7],axi_addr4[3:1]</td>
+</tr>
+<tr>
+<td>Bank</td>
+<td>axi_addr4[6:5]</td>
+</tr>
+<tr>
+<td>Bank Group</td>
+<td>axi_addr4[4:4]</td>
+</tr>
+</tbody>
+</table>
+<p>在对DDR进行访问的时候参照波形来验证该映射关系。</p>
+<h2 id="memory-controller">Memory Controller </h2>
+<p>Memory Controller (MC)接收用户侧发来的地址、数据、控制命令，并通过满足DRAM协议与时序要求的方式，低延迟高效率的发送至PHY。控制器时钟与DRAM时钟的比例为4：1，在每个系统时钟的周期都可以发送一次ACT，CAS，Pre命令。<br>
+<img src="image-13.png" alt="Memory Controller"></p>
+<h2 id="phy">Phy </h2>
+<p>PHY可以看做是连接到外部DDR设备的低层级物理接口，包括校准逻辑用于确保接口本身的可靠操作.PHY可以生成所有需要发送给存储设备的信号时序以及命令排序。也包括上电后发送给SDRAM的初始化逻辑。<br>
+<img src="image-26.png" alt="MIG PHY"></p>
+<h1 id="jedec-standard">JEDEC Standard </h1>
+<h2 id="pinout-description">Pinout Description </h2>
+<blockquote>
+<p>标准说明来自JESD79-4</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CK_t,CK_c</td>
+<td>In</td>
+<td>差分输入时钟信号，所有地址和控制的输入信号在CK_t和CK_c的边沿交叉处采样</td>
+</tr>
+<tr>
+<td>CKE, (CKE1)</td>
+<td>In</td>
+<td>时钟使能信号，高有效。读写访问期间都需要拉高</td>
+</tr>
+<tr>
+<td>CS_n, (CS1_n)</td>
+<td>In</td>
+<td>片选信号，拉高时所有命令失效。在多RANK的组合系统中，CS_n用于选择有效的外部rank，是command的组成部分</td>
+</tr>
+<tr>
+<td>C0,C1,C2</td>
+<td>In</td>
+<td>Chip ID ，尽在使用3D堆叠工艺的设备上使用</td>
+</tr>
+<tr>
+<td>ODT, (ODT1)</td>
+<td>In</td>
+<td>On Die Termination：使能DDR4 SDRAM内部的RTT_NOM终端电阻。当通过Mode Register 使能TDQS时，对于x16配置，ODT应用于每个DQ、DQSU_t、DQSU_c、DQSL_t、DQSL_c、DMU_n和DML_n信号。如果MR1被配置为禁用RTT_NOM, ODT引脚将被忽略。</td>
+</tr>
+<tr>
+<td>ACT_n</td>
+<td>In</td>
+<td>与CS_n一起定义输入的激活命令</td>
+</tr>
+<tr>
+<td>RAS_n/A16. CAS_n/A15. WE_n/A14</td>
+<td>In</td>
+<td>command的组成部分</td>
+</tr>
+<tr>
+<td>DM_n/DBI_n/TDQS_t, (DMU_n/DBIU_n), (DML_n/DBIL_n)</td>
+<td>IO</td>
+<td>Data Mask and Data Bus Inversion:DM_n是写数据的输入掩码信号。在写访问期间，当DM_n被采样为LOW时，输入数据将被屏蔽。DM_n会被DQS的双边采样。通过MR5中的模式寄存器A10,A11,A12设置可以选择使用DM 或 DBI功能。DBI_n是一个输入/输出信号，用于标识是存储/输出真实数据还是反向数据。如果DBI_n为低，则数据在DDR4 SDRAM内取反后存储/输出，如果DBI_n为高则不取反。TDQS仅在X8中支持</td>
+</tr>
+<tr>
+<td>BG0 - BG1</td>
+<td>In</td>
+<td>在执行ACT，READ ，WRITE，Precharge命令时决定支持的BankGroup，BG0在MRS命令中决定访问哪个模式寄存器。X4/8有BG0和BG1，但X16只有BG0</td>
+</tr>
+<tr>
+<td>BA0 - BA1</td>
+<td>In</td>
+<td>Bank Address Inputs ：在执行ACT，READ ，WRITE，Precharge命令时决定支持的Bank，在MRS命令中决定访问哪个模式寄存器。</td>
+</tr>
+<tr>
+<td>A0 - A17</td>
+<td>In</td>
+<td>为ACTIVATE Commands提供行地址，为Read/Write命令提供列地址，以便从不同Bank的内存数组中选择一个位置。在MRS命令中也提供操作码。A17 is only defined for the x4 configuration.</td>
+</tr>
+<tr>
+<td>A10 / AP</td>
+<td>In</td>
+<td>读/写命令时采样A10，判断是否应在读/写操作后对被访问Bank进行auto Precharge。 (HIGH: Autoprecharge; LOW: no Autoprecharge)。在Precharge命令期间用于确定Precharge是否适用于一个bank(A10)低或所有bank(A10高)。如果只有一个bank需要precharge，则按bank地址选择。</td>
+</tr>
+<tr>
+<td>A12 / BC_n</td>
+<td>In</td>
+<td>Burst Chop: 在读和写命令期间采样，以确定是否执行Burst Chop。</td>
+</tr>
+<tr>
+<td>DQ</td>
+<td>In Out</td>
+<td>双向数据总线</td>
+</tr>
+<tr>
+<td>DQS_t, DQS_c, DQSU_t, DQSU_c, DQSL_t, DQSL_c</td>
+<td>In Out</td>
+<td>Data Strobe: 读访问时为输出，与DQ边沿对齐；写访问时为输入，与DQ中心对齐，For the x16, DQSL corresponds to the data on DQL0-DQL7; DQSU corresponds to the data on DQU0-DQU7.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="state-diagram-command-definitions">State Diagram Command Definitions </h2>
+<p><img src="image-27.png" alt="State Command"></p>
+<h2 id="basic-functional-description">Basic Functional Description </h2>
+<p>对于存储设备的读写访问是基于突发传输的。访问从选定的地址开始，连续访问一个突发长度的地址，突发长度可以由寄存器配置为BL（burst length）=8,或者BC（burst chop）=4两种模式。访问设备前，先要执行ACT命令，随后是读或者写命令。与ACT命令一同设置的adr信号用于选择要访问的bank，bankgroup，row地址。与读写命令一起设置的adr信号用于选择column地址。并通过A10决定是否需要auto precharge。A12选择BC4或者BL8模式（on the fly OTF mode），前提是在模式寄存器中配置过。</p>
+<ol>
+<li>对DDR4 SDRAM的读和写操作是以突发为导向的。它从一个选定的位置开始（由用户提供的地址指定），并继续进行4个或8个突发长度。</li>
+<li>读取和写入操作是一个两步过程。它以 ACTIVATE 命令开始（ACT_n 和 CS_n 在一个时钟周期内变为低电平），然后是 RD 或 WR 命令。</li>
+<li>与 ACTIVATE 命令同时注册的地址位用于选择要激活的 BankGroup、Bank 和 Row（x4/8 中的 BG0-BG1 和 x16 中的 BG0 选择 bankgroup；BA0-BA1 选择 bank；A0-A17 选择row）。此步骤也称为 RAS - Row Address Strobe(RAS - 行地址选通)</li>
+<li>与读或写命令同时注册的地址位用于选择突发操作的起始列位置。此步骤也称为CAS - Column Address Strobe(CAS - 列地址选通)。</li>
+<li>每个bank只有一组感应放大器。在对同一bank的不同行进行读/写之前，必须使用PRECHARGE命令解除当前打开的row的激活。PRECHARGE相当于关闭柜子里当前的文件抽屉，它使感应放大器中的数据被写回row中。</li>
+<li>可以使用 RDA（自动预充电读取）和 WRA（自动预充电写入）命令，而不是发出显式 PRECHARGE 命令来停用行。这些命令告诉 DRAM 在读取或写入操作完成后自动停用/预充电行。由于列地址只使用地址位A0-A9，A10在CAS期间是一个未使用的位，它被重载以指示自动预充电。</li>
+</ol>
+<h2 id="reset-and-initialization-procedure">RESET and Initialization Procedure </h2>
+<p>依据文档说明，上电释放复位信号后激活CKE，随后依次配置MR3,6,5,4,2,1,0。然后发送ZQCL校准命令，等待tDLLK和tZQ初始化完成。<br>
+<img src="image-28.png" alt="Init"><br>
+<img src="image-33.png" alt="verdi init"></p>
+<p>所有的时间参数均可在JDEC最后的附录找到，以tZQin为例；<br>
+<img src="image-29.png" alt="time parameter"><br>
+仿真波形中 发送ZQCL命令后1029个cycle 拉高init_calib_complete 信号，符合文档说明；<br>
+<img src="image-30.png" alt="Init Zqcl"></p>
+<h2 id="register-definition">Register Definition </h2>
+<h3 id="programming-mode-registers">Programming Mode Registers </h3>
+<p>DDR4 SDRAM提供了许多特性、功能和设置，可以使用7个模式寄存器进行编程。这些寄存器可以使用MRS（模式寄存器设置）命令进行编程。模式寄存器在初始化过程中被设置，此后在正常操作过程中可以随时改变它们。模式寄存器的设置受两个定时参数的制约。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tMRD</td>
+<td>MRS命令周期时间。它是完成对模式寄存器的WRITE操作所需的时间，也是tMRD时序图中显示的两个MRS命令之间所需的最小时间。</td>
+</tr>
+<tr>
+<td>tMOD</td>
+<td>是指从一个MRS命令到一个非MRS命令所需的最短时间，不包括DES。</td>
+</tr>
+</tbody>
+</table>
+<p><img src="image-31.png" alt="tMRD"><br>
+<img src="image-32.png" alt="tMOD"></p>
+<h3 id="mode-register">Mode Register </h3>
+<p>此处依照初始化配置的顺序MR3,6,5,4,2,1,0来说明。参考真值表，当ACT为1，CS，RAS，CAS，WE为0时进入MRS模式。</p>
+<ul>
+<li>MR3<br>
+<img src="image-34.png" alt="MR3"><br>
+<img src="image-35.png" alt="MR3 A9"><br>
+<img src="image-37.png" alt="verdi MR3654"><br>
+<img src="image-42.png" alt="verdi MR210"><br>
+<img src="image-36.png" alt="verd MR3"><br>
+该example中MR3只配置了A9=1；CRC+DM Write Command Latency = 5n Cycle；</li>
+<li>MR6<br>
+<img src="image-38.png" alt="MR6"><br>
+<img src="image-39.png" alt="MR6 A11"><br>
+A11=1 ,tCCD_L=6;</li>
+<li>MR5<br>
+<img src="image-40.png" alt="MR5"><br>
+A10=1 ,使能DM。关闭DBI；</li>
+<li>MR4<br>
+<img src="image-41.png" alt="MR4 "><br>
+CMD (CAL) address latency =0</li>
+<li>MR2<br>
+<img src="image-43.png" alt="MR2 "><br>
+A3=1，A4=1 CWL=12,CWL具体含义在读写时序中介绍。<br>
+<img src="image-44.png" alt="CWL "><br>
+<img src="image-45.png" alt="CWL v"></li>
+<li>MR1<br>
+<img src="image-46.png" alt="MR1 "><br>
+Additive Latency AL = 0 ；</li>
+<li>MR0<br>
+<img src="image-47.png" alt="MR0"><br>
+BL = 8；CL=17；<br>
+<img src="image-48.png" alt="CL"><br>
+<img src="image-49.png" alt="WR/RTP"></li>
+</ul>
+<h2 id="command-truth-table">Command Truth Table </h2>
+<p><img src="image-50.png" alt="Command Truth Table"></p>
+<h3 id="activate-command">ACTIVATE Command </h3>
+<p>activate命令用于打开(激活)特定bank中的一行（Row），以供后续访问。该Row会保持激活状态直到向该bank发送precharge命令。当需要访问同一bank不同row时，必须先发送precharge命令以取消激活，这是因为一个bank中只有一组用于提取电压信号的感应放大器。在ACT命令中有3个关键参数。</p>
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>Functional description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tRRD_S</td>
+<td>当向不同 bank group 的 bank 发出连续的 ACTIVATE 命令时，ACTIVATE 命令必须用 tRRD_S 分隔（row-to-row delay--short）</td>
+</tr>
+<tr>
+<td>tRRD_L</td>
+<td>如果bank属于同一个bank group，则它们的 ACTIVATE 必须由 tRRD_L （row-to-row delay--long）分隔。</td>
+</tr>
+<tr>
+<td>tFAW</td>
+<td>fifth activate window tFAW 指定一个窗口，在该窗口内只能发出四个激活命令。因此，你可以在它们之间使用 tRRD_S 背靠背发出 ACTIVATE 命令，但是一旦你完成了 4 次激活，在 tFAW 窗口到期之前，你无法再发出另一个。</td>
+</tr>
+</tbody>
+</table>
+<p><img src="image-51.png" alt="tRRD"><br>
+<img src="image-52.png" alt="tRRD_S"><br>
+Notes: 1. Maximum limit not applicable.<br>
+在镁光的协议中没有规定tRRD 的最大值，只规定了DDR4-2400的tRRR_S/L min=4cycles tFAW=28cycles<br>
+<img src="image-53.png" alt="tRRD timing"><br>
+我们看一下example中的设定,这几个参数在mig中写为了固定值<br>
+<img src="image-55.png" alt="ddr4 "><br>
+在实际波形中可以看到，在xilinx的控制器中并没有区分是否为相同BG，而是将tRRD统一使用8个cycle(大于7就行)。<br>
+<img src="image-56.png" alt="RRD"><br>
+第1次和第5次ACT命令之间间隔40个cycyle（大于37）<br>
+<img src="image-73.png" alt="FAW 1"></p>
+<h3 id="precharge-command">PRECHARGE Command </h3>
+<p>PRECHARGE命令用于取消激活某个bank中已激活的row或所有bank中已经激活的row。在PRE命令发送的一个特定时间(tRP)后，可以发送ACT命令继续访问。<br>
+<img src="image-58.png" alt="tRP"><br>
+tRP=13.32ns<br>
+有一种例外情况是同时发生了auto precharge，此时只要不打断当前的数据传输以及违反其他时序参数，允许向不同bank发送读写访问请求。<br>
+在一个bank precharge完成后将进入idel状态，在进行任何读写访问前，需要先发送ACT请求。<br>
+在进行读写访问时如果A10信号为高那么会进行auto precharge。该功能会使用RAS的锁存电路来内部延迟precharge操作，直到ARRAY RESTORE操作完成。也就是说在突发访问序列的最后一个数据正确地存储在存储器阵列之后，PRECHARGE操作才会开始。</p>
+<h3 id="refresh-command">REFRESH Command </h3>
+<p>刷新命令用于防止动态存储器的存储信息丢失。在发送刷新命令请求时，会由DRAM内部的刷新控制器自动生成地址，所以对于控制方并不需要关心地址。在发送刷新请求前，所有bank必须进行precharge操作并处于idle状态一段时间(tPR)。在刷新完成后，所有的bank也会保持idle状态。在REF命令和下一个有效命令间需要保持一个延迟tRFC。<br>
+通常来说，存储设备需要在平均每个tREFI 期间请求一次REF 命令。但为了减少读写访问期间因为REF操作而造成的性能损失，DDR4允许REF命令推迟。可以推迟的REF 命令次数取决于MR3中配置的刷新模式(1x,2x,4x)。当设备处于1X刷新模式时，最多可以延迟8条REFRESH命令。</p>
+<table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>Functional description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tREFI</td>
+<td>该设备需要 REFRESH 命令的平均间隔为 tREFI</td>
+</tr>
+<tr>
+<td>tRP</td>
+<td>预充电时间。在应用 REFRESH 命令之前，必须对bank进行预充电并在 tRP 期间处于空闲状态</td>
+</tr>
+<tr>
+<td>tRFC</td>
+<td>REFRESH 命令和下一个有效命令之间的延迟，DES 除外</td>
+</tr>
+</tbody>
+</table>
+<p><img src="image-59.png" alt="REF"><br>
+MR3中可以设置刷新模式<br>
+<img src="image-60.png" alt="MR3 REF"><br>
+附录中有规定 tREF值<br>
+<img src="image-61.png" alt="REF P"><br>
+在MIG中 REF和REFI是固定值<br>
+<img src="image-62.png" alt="MIG REF"><br>
+<img src="image-63.png" alt="PRE REF"><br>
+在执行REF前，先执行PRE，时间间隔为13.328ns 与tRP对应<br>
+<img src="image-64.png" alt="REF "><br>
+在执行REF后322个cycle再执行其他命令，322&gt;tRFC<br>
+<img src="image-65.png" alt="REFI"><br>
+两次刷新间隔9332cycles</p>
+<h3 id="read-operation">READ Operation </h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">parameter</th>
+<th style="text-align:left">Functional description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CL (CAS Latency)</td>
+<td style="text-align:left">CAS 是 Column-Address-Strobe， <br>CL 是内部 READ 命令与输出数据的第一bit可用之间的延迟，以时钟周期为单位。<br>它在 MR0 模式寄存器中定义。 <br>SDRAM 数据表通常会具体说明需要为特定操作频率设置的 CL</td>
+</tr>
+<tr>
+<td style="text-align:left">AL (Additive Latency)</td>
+<td style="text-align:left">通过AL,设备允许在ACTIVATE命令后立即发出WRITE命令。<br>该命令在设备内部发出前会被保留AL的时间。<br>支持这一功能是为了维持设备中更高的带宽/速度</td>
+</tr>
+<tr>
+<td style="text-align:left">RL (Read Latency)</td>
+<td style="text-align:left">这是整体读取延迟，定义为 RL = CL + AL</td>
+</tr>
+<tr>
+<td style="text-align:left">tCCD_S &amp; tCCD_L</td>
+<td style="text-align:left">与同一bank组内的bank存取相比，不同bank组的bank存取需要较少的存取时间延迟。<br>对不同bank组的bank访问需要在命令之间有tCCD_S（或更短）延迟，<br>而同一bank组内的bank访问需要在命令之间有tCCD_L（或更长）延迟</td>
+</tr>
+</tbody>
+</table>
+<p><img src="image-71.png" alt="READ "><br>
+example中 AL=0，CL=17，BL=8；<br>
+<img src="image-72.png" alt="READ verdi"></p>
+<h3 id="write-operation">WRITE Operation </h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">parameter</th>
+<th style="text-align:left">Functional description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CWL</td>
+<td style="text-align:left">(CAS Write Latency)CWL是内部WRITE命令与输入数据的第1 bit可用之间的延迟，<br>以时钟周期为单位。<br>它被定义在模式寄存器MR2中</td>
+</tr>
+<tr>
+<td style="text-align:left">AL</td>
+<td style="text-align:left">(Additive Latency)通过AL，设备允许在ACTIVATE命令后立即发出WRITE命令。<br>该命令在设备内部发出前会被保留AL的时间。<br>支持这一功能是为了维持设备中更高的带宽/速度</td>
+</tr>
+<tr>
+<td style="text-align:left">WL</td>
+<td style="text-align:left">(Write Latency)这是整体写入延迟，定义为 WL = CWL + AL</td>
+</tr>
+<tr>
+<td style="text-align:left">tCCD_S/L</td>
+<td style="text-align:left">与同一bank组内的bank存取相比，不同bank组的bank存取需要较少的存取时间延迟。<br>对不同bank组的bank访问需要在命令之间有tCCD_S（或更短）延迟，<br>而同一bank组内的bank访问需要在命令之间有tCCD_L（或更长）延迟</td>
+</tr>
+</tbody>
+</table>
+<p><img src="image-66.png" alt="Write "><br>
+example中 AL=0 ，CWL=12，BL=8；在第一笔写命令中，WL=CWL+AL=12符合预期。<br>
+tWPRE=1 tCK,tWPST=0.5 tCK;在MRS中配置了1tCK模式的premble；<br>
+<img src="image-67.png" alt="Wr1"><br>
+<img src="image-68.png" alt="CCD "><br>
+连续写时，两个写命令之间需要间隔tCCD, 本example中tCCD_S=4,tCCD_L=6(MR1配置)；<br>
+<img src="image-69.png" alt="CCD_S"><br>
+<img src="image-70.png" alt="Wr CCD"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

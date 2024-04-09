@@ -1,0 +1,19 @@
+Fri Dec 15 14:52:32 CST 2023
+Trace back: window name "source1" already exists in parent
+    while executing
+"frame [GetActiveWindowFooter].$name"
+    (procedure "Console::CreateWindowFooter" line 3)
+    invoked from within
+"Console::CreateWindowFooter [$frame_name cget -windowname]"
+    (object "::.main_pane.source1" method "::mtiwidgets::WindowObj::Activate" body line 24)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 36)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:D:/Xilinx/modelsim/win64/tk8.6/bgerror.tcl:106: ::tkerror {window name "source1" already exists in parent}
+  <1:proc:24: ::tk::dialog::error::bgerror {window name "source1" already exists in parent}

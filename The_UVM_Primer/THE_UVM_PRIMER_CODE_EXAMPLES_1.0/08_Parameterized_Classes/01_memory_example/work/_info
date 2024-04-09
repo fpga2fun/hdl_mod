@@ -1,0 +1,69 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Downloads/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/08_Parameterized_Classes/01_memory_example
+T_opt
+!s110 1702631915
+VJ11?3K9U@e4:;jjSic:FF3
+04 3 4 work top fast 0
+=1-34735aec8a57-657c19eb-299-5aa0
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+vRAM
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1702631914
+!i10b 1
+!s100 ^@[Y84i]PcdD80:LNC3mW3
+!s11b ng6jh_[Z<@9ez?B[Q^XSA1
+I<O46FDm5zc@[fEeVjeh533
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1576156172
+8ram.sv
+Fram.sv
+Z5 L0 16
+Z6 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z7 !s108 1702631914.000000
+Z8 !s107 top.sv|ram.sv|
+Z9 !s90 -reportprogress|300|ram.sv|top.sv|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@r@a@m
+vtop
+R2
+R3
+!i10b 1
+!s100 IHhzb`FcgA:V>OTeDXN^b0
+!s11b a5<lF2JlNL@aN7I=RY]Qc1
+I2J8nKd`];jS=]7D`OFX5n1
+R4
+S1
+R0
+w1576156171
+8top.sv
+Ftop.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1

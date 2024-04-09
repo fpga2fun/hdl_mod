@@ -1,0 +1,67 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/all_code/verilog_module/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/06_Polymorphism/01_Not_Virtual
+T_opt
+!s110 1710916807
+VnRA:ef7QkYoz5Tk6UiSY42
+04 3 4 work top fast 0
+=1-34735aec8a57-65fa84c6-279-1084
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Xnot_virtual_sv_unit
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+V2nL7=haiJd2c^c]b;9lSc2
+r1
+!s85 0
+!i10b 1
+!s100 7USWK]?:YJN>VFYW]MPHD1
+I2nL7=haiJd2c^c]b;9lSc2
+!i103 1
+S1
+R0
+Z3 w1576156173
+Z4 8not_virtual.sv
+Z5 Fnot_virtual.sv
+L0 16
+Z6 OL;L;2019.2;69
+31
+Z7 !s108 1710916803.000000
+Z8 !s107 not_virtual.sv|
+Z9 !s90 -reportprogress|300|-f|sv.f|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtop
+R2
+DXx4 work 19 not_virtual_sv_unit 0 22 2nL7=haiJd2c^c]b;9lSc2
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 hoY]5K:ej4:G`S@Si9e6g3
+IUOlMk;aURUhZk=7>Z[cn83
+!s105 not_virtual_sv_unit
+S1
+R0
+R3
+R4
+R5
+L0 56
+R6
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1

@@ -1,0 +1,92 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/all_code/verilog_module/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/17_Interthread_Communication/01_Modules
+T_opt
+!s110 1711520267
+VAlj3X>IFY2l2WLJ42oUf31
+04 3 4 work top fast 0
+=1-34735aec8a57-6603ba0a-246-960
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+vconsumer
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1711520264
+!i10b 1
+!s100 aK_9n9cF@YCR]cPEnUhTT3
+!s11b HV336KlYRTn8G3QOS0IAb2
+I7B8]KaGbbKAcBBYb=@MP30
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1576156166
+Z6 8modules.sv
+Z7 Fmodules.sv
+L0 25
+Z8 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z9 !s108 1711520264.000000
+Z10 !s107 modules.sv|
+Z11 !s90 -reportprogress|300|modules.sv|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vproducer
+R2
+R3
+!i10b 1
+!s100 fnXO;A]Io^7DzP7E8:QU@0
+!s11b ^CYlRB^nUGeYCAh?Bn3FP0
+Imj?Q<V3S><<77Cc69e]??1
+R4
+S1
+R0
+R5
+R6
+R7
+L0 16
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vtop
+R2
+R3
+!i10b 1
+!s100 2TJTiB`RBXdnFg29fh6IO1
+!s11b PNUXll?0^`WGEM_QOEI^20
+IkRX4<0ABUK9iJhHI^68aQ2
+R4
+S1
+R0
+R5
+R6
+R7
+L0 34
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1

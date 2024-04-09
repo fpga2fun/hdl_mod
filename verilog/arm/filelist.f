@@ -1,0 +1,16 @@
+D:\all_code\verilog_module\arm\adder.sv
+D:\all_code\verilog_module\arm\alu.sv
+D:\all_code\verilog_module\arm\arm.sv
+D:\all_code\verilog_module\arm\condlogic.sv
+D:\all_code\verilog_module\arm\controller.sv
+D:\all_code\verilog_module\arm\datapath.sv
+D:\all_code\verilog_module\arm\decoder.sv
+D:\all_code\verilog_module\arm\dmem.sv
+D:\all_code\verilog_module\arm\extend.sv
+D:\all_code\verilog_module\arm\flopenr.sv
+D:\all_code\verilog_module\arm\flopr.sv
+D:\all_code\verilog_module\arm\imem.sv
+D:\all_code\verilog_module\arm\mux2.sv
+D:\all_code\verilog_module\arm\regfile.sv
+D:\all_code\verilog_module\arm\testbench.sv
+D:\all_code\verilog_module\arm\top.sv

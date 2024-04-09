@@ -1,0 +1,110 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Downloads/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/15_Talking_Objects/01_No_Analysis_Port
+T_opt
+!s110 1702982322
+VD<ac]M5512l2;A9_HY@bk3
+Z1 04 3 4 work top fast 0
+=1-34735aec8a57-658172b2-30-19cc
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2019.2;69
+R0
+T_opt1
+!s110 1711437570
+V8LHi6]o=[YcK06aRgG7[X3
+R1
+=1-34735aec8a57-66027701-38d-39b4
+R2
+R3
+n@_opt1
+R4
+Xdice_pkg
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z6 DXx6 mtiUvm 7 uvm_pkg 0 22 4QHjjCAl?9JhYWn=`96KL0
+!s110 1711437566
+!i10b 1
+!s100 Ed2WI4l=oRcfbEV11fFIZ3
+!s11b eI`ikGf?he4ao6[C0J7KP0
+I1V0zNF@^:fdzOZV5]Ej732
+V1V0zNF@^:fdzOZV5]Ej732
+S1
+Z7 dD:/all_code/verilog_module/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/15_Talking_Objects/01_No_Analysis_Port
+Z8 w1576156168
+8dice_pkg.sv
+Fdice_pkg.sv
+Z9 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z10 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z11 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z12 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z13 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z14 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z15 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z16 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z17 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z18 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z19 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z20 FD:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+Fdice_roller.svh
+Fcoverage.svh
+Fhistogram.svh
+Faverage.svh
+Fdice_test.svh
+Z21 L0 16
+Z22 OL;L;2019.2;69
+r1
+!s85 0
+31
+!s108 1711437565.000000
+!s107 dice_test.svh|average.svh|histogram.svh|coverage.svh|dice_roller.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|dice_pkg.sv|
+!s90 -reportprogress|300|dice_pkg.sv|
+!i113 0
+Z23 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vtop
+R5
+R6
+DXx4 work 8 dice_pkg 0 22 1V0zNF@^:fdzOZV5]Ej732
+!s110 1711437567
+!i10b 1
+!s100 SPjd2l3nW3c:N2D490LIg0
+!s11b XMJ;<3nZ];T5?37d<2zH93
+I8>h=lR@_7gojf2z@cDMA92
+VDg1SIo80bB@j0V0VzS_@n1
+S1
+R7
+R8
+8top.sv
+Ftop.sv
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+r1
+!s85 0
+31
+!s108 1711437566.000000
+!s107 D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|D:/Xilinx/modelsim/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|top.sv|
+!s90 -reportprogress|300|top.sv|
+!i113 0
+R23
+R3

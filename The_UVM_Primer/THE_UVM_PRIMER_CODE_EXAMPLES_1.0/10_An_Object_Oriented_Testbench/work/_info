@@ -1,0 +1,223 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/all_code/verilog_module/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/10_An_Object_Oriented_Testbench
+Esingle_cycle
+Z1 w1576156170
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z5 8tinyalu_dut/single_cycle_add_and_xor.vhd
+Z6 Ftinyalu_dut/single_cycle_add_and_xor.vhd
+l0
+L18
+V:Ij;_;FPLzYGNoHM36T<T3
+!s100 ]zLNLiXkF=5o2aD7`HXaW0
+Z7 OL;C;2019.2;69
+32
+Z8 !s110 1711009587
+!i10b 1
+Z9 !s108 1711009587.000000
+Z10 !s90 -reportprogress|300|-f|dut.f|
+Z11 !s107 tinyalu_dut/tinyalu.vhd|tinyalu_dut/three_cycle_mult.vhd|tinyalu_dut/single_cycle_add_and_xor.vhd|
+!i113 0
+Z12 tExplicit 1 CvgOpt 0
+Aadd_and_xor
+R2
+R3
+R4
+Z13 DEx4 work 12 single_cycle 0 22 :Ij;_;FPLzYGNoHM36T<T3
+l40
+L35
+VjkdVIS:zWWe6YP958^c<?2
+!s100 W:@2=zMKJzNl_P<OV5DfD2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Ethree_cycle
+R1
+R2
+R3
+R4
+R0
+Z14 8tinyalu_dut/three_cycle_mult.vhd
+Z15 Ftinyalu_dut/three_cycle_mult.vhd
+l0
+L21
+V?b?Bg9gU??:QULD5<blm`3
+!s100 OWV05@_zBTOgIT[g_`@_V3
+R7
+32
+Z16 !s110 1711009588
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Amult
+R2
+R3
+R4
+Z17 DEx4 work 11 three_cycle 0 22 ?b?Bg9gU??:QULD5<blm`3
+l41
+L37
+Vj6cEdRYiFMdX3EY^<VQ851
+!s100 K_ZLdTS5BO0V_C<=]@faG2
+R7
+32
+R16
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Etinyalu
+R1
+R2
+R3
+R4
+R0
+Z18 8tinyalu_dut/tinyalu.vhd
+Z19 Ftinyalu_dut/tinyalu.vhd
+l0
+L18
+VE[:oHD5fdaY_Kk8k;2L0L3
+!s100 IQSjkHCU25DWoNfhGl_?11
+R7
+32
+R16
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Artl
+R17
+R13
+DEx4 work 7 tinyalu 0 22 E[:oHD5fdaY_Kk8k;2L0L3
+R2
+R3
+R4
+l89
+L40
+V6LO14M]@?bYDckibd:89<0
+!s100 o>V<InYG_<ZVWCG:2Y8_X0
+R7
+32
+R16
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Ytinyalu_bfm
+Z20 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z21 DXx4 work 11 tinyalu_pkg 0 22 4Mh>FOLece8anX^h3WmSQ0
+R16
+!i10b 1
+!s100 Y?S::ICjgZlQC]^l[0CLk3
+!s11b SiORX@^DC[QWziP_O9J8c3
+ITT9]MfeDKg4CPYYEScA5d0
+Z22 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z23 w1576156156
+8tinyalu_bfm.sv
+Ftinyalu_bfm.sv
+Z24 L0 16
+Z25 OL;L;2019.2;69
+r1
+!s85 0
+31
+Z26 !s108 1711009588.000000
+Z27 !s107 tinyalu_macros.svh|tb_classes/testbench.svh|tb_classes/scoreboard.svh|tb_classes/tester.svh|tb_classes/coverage.svh|top.sv|tinyalu_bfm.sv|tinyalu_pkg.sv|
+Z28 !s90 -reportprogress|300|-f|tb.f|
+!i113 0
+Z29 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z30 !s92 +incdir+tb_classes -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z31 tCvgOpt 0
+Xtinyalu_pkg
+!s115 tinyalu_bfm
+R20
+R16
+!i10b 1
+!s100 k;88[deMo<RV3>^J^VJM>2
+!s11b oAe3B5;Bl>il8E_k>Yf[B3
+I4Mh>FOLece8anX^h3WmSQ0
+V4Mh>FOLece8anX^h3WmSQ0
+S1
+R0
+w1702956604
+8tinyalu_pkg.sv
+Ftinyalu_pkg.sv
+Ftb_classes/coverage.svh
+Ftb_classes/tester.svh
+Ftb_classes/scoreboard.svh
+Ftb_classes/testbench.svh
+R24
+R25
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 0
+R29
+R30
+R31
+vtop
+R20
+R21
+R16
+!i10b 1
+!s100 gOf?bV_F>^GaFoQJ]Il^H0
+!s11b fZ1^RRUG?K4=IOI?2PToj0
+IJf:<8OOn5]De]W[PV]Xn90
+R22
+S1
+R0
+R23
+8top.sv
+Ftop.sv
+Ftinyalu_macros.svh
+R24
+R25
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 0
+R29
+R30
+R31
+Ttop_optimized
+!s11d tinyalu_pkg D:/all_code/verilog_module/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/10_An_Object_Oriented_Testbench/work 1 tinyalu_bfm 1 D:/all_code/verilog_module/The_UVM_Primer/THE_UVM_PRIMER_CODE_EXAMPLES_1.0/10_An_Object_Oriented_Testbench/work 
+R16
+V7MaXLRRh`0LZ2^U:oJ1_60
+04 3 4 work top fast 0
+o+acc +cover=sbfec+tinyalu(rtl).
+R31
+ntop_optimized
+OL;O;2019.2;69

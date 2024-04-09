@@ -1,0 +1,445 @@
+# //  ModelSim SE-64 2019.2 Apr 17 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do run.do
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 17:09:58 on Dec 15,2023
+# vcom -reportprogress 300 -f dut.f 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity single_cycle
+# -- Compiling architecture add_and_xor of single_cycle
+# -- Compiling entity three_cycle
+# -- Compiling architecture mult of three_cycle
+# -- Compiling entity tinyalu
+# -- Compiling architecture rtl of tinyalu
+# -- Loading entity single_cycle
+# -- Loading entity three_cycle
+# End time: 17:09:58 on Dec 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 17:09:58 on Dec 15,2023
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package tinyalu_pkg
+# -- Compiling interface tinyalu_bfm
+# -- Importing package tinyalu_pkg
+# -- Compiling module tester
+# -- Compiling module coverage
+# -- Compiling module scoreboard
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:09:58 on Dec 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vopt 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 17:09:58 on Dec 15,2023
+# vopt -reportprogress 300 top -o top_optimized "+acc" "+cover=sbfec+tinyalu(rtl)." 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface tinyalu_bfm
+# -- Importing package tinyalu_pkg
+# -- Loading module tester
+# -- Loading module coverage
+# -- Loading module scoreboard
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading entity tinyalu
+# -- Loading architecture rtl of tinyalu
+# -- Loading entity single_cycle
+# -- Loading entity three_cycle
+# -- Loading architecture add_and_xor of single_cycle
+# -- Loading architecture mult of three_cycle
+# Optimizing 10 design-units (inlining 0/8 module instances, 0/3 architecture instances):
+# -- Optimizing package tinyalu_pkg(fast)
+# -- Optimizing module coverage(fast)
+# -- Optimizing module tester(fast)
+# -- Optimizing interface tinyalu_bfm(fast)
+# -- Optimizing module scoreboard(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing interface tinyalu_bfm(fast)
+# -- Optimizing architecture add_and_xor of single_cycle
+# -- Optimizing architecture mult of three_cycle
+# -- Optimizing architecture rtl of tinyalu
+# Optimized design name is top_optimized
+# End time: 17:09:59 on Dec 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim top_optimized -coverage 
+# Start time: 17:09:59 on Dec 15,2023
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.tinyalu_pkg(fast)
+# Loading work.tinyalu_bfm(fast)
+# Loading work.tester(fast)
+# Loading work.coverage(fast)
+# Loading work.scoreboard(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tinyalu(rtl)#1
+# Loading work.single_cycle(add_and_xor)#1
+# Loading work.three_cycle(mult)#1
+# 1
+# ** Note: $stop    : tester.sv(58)
+#    Time: 39940 ns  Iteration: 1  Instance: /top/tester_i
+# Break in Module tester at tester.sv line 58
+# coverage exclude -src ../../tinyalu_dut/single_cycle_add_and_xor.vhd -scope /top/DUT/add_and_xor -line 49 -code b
+# ** Warning: (vsim-4036) The 'coverage exclude' command had no effect on some/all objects because
+# no matching coverage data was found.
+# 
+# Model Technology ModelSim SE-64 vcover 2019.2 Coverage Utility 2019.04 Apr 17 2019
+# Start time: 17:10:08 on Dec 15,2023
+# vcover report tinyalu.ucdb 
+# Coverage Report Summary Data by instance
+# 
+# =================================================================================
+# === Instance: /top/coverage_i
+# === Design Unit: work.coverage
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Covergroups                      2        na        na   100.00%
+#         Coverpoints/Crosses          5        na        na        na
+#             Covergroup Bins         40        40         0   100.00%
+# 
+# =================================================================================
+# === Instance: /top/DUT/add_and_xor
+# === Design Unit: work.single_cycle(add_and_xor)
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                        13        13         0   100.00%
+#     Conditions                       2         2         0   100.00%
+#     Statements                       8         8         0   100.00%
+# 
+# =================================================================================
+# === Instance: /top/DUT/mult
+# === Design Unit: work.three_cycle(mult)
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         2         2         0   100.00%
+#     Expressions                      8         7         1    87.50%
+#     Statements                      19        19         0   100.00%
+# 
+# =================================================================================
+# === Instance: /top/DUT
+# === Design Unit: work.tinyalu(rtl)
+# =================================================================================
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         9         9         0   100.00%
+#     Statements                      15        15         0   100.00%
+# 
+# 
+# TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+# 
+# Total Coverage By Instance (filtered view): 97.50%
+# 
+# End time: 17:10:08 on Dec 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcover 2019.2 Coverage Utility 2019.04 Apr 17 2019
+# Start time: 17:10:09 on Dec 15,2023
+# vcover report tinyalu.ucdb -cvg -details 
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /top/coverage_i
+# === Design Unit: work.coverage
+# =================================================================================
+# 
+# Covergroup Coverage:
+#     Covergroups                      2        na        na   100.00%
+#         Coverpoints/Crosses          5        na        na        na
+#             Covergroup Bins         40        40         0   100.00%
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /top/coverage_i/op_cov                          100.00%        100          -    Covered              
+#     covered/total bins:                                    21         21          -                      
+#     missing/total bins:                                     0         21          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint op_set                                 100.00%        100          -    Covered              
+#         covered/total bins:                                21         21          -                      
+#         missing/total bins:                                 0         21          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/top/coverage_i/oc              100.00%        100          -    Covered              
+#     covered/total bins:                                    21         21          -                      
+#     missing/total bins:                                     0         21          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint op_set                                 100.00%        100          -    Covered              
+#         covered/total bins:                                21         21          -                      
+#         missing/total bins:                                 0         21          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin single_cycle[no_op]                           380          1          -    Covered              
+#         bin single_cycle[add_op]                          202          1          -    Covered              
+#         bin single_cycle[and_op]                          171          1          -    Covered              
+#         bin single_cycle[xor_op]                          192          1          -    Covered              
+#         bin single_cycle[rst_op]                          504          1          -    Covered              
+#         bin multi_cycle                                   547          1          -    Covered              
+#         bin opn_rst[add_op=>rst_op]                        28          1          -    Covered              
+#         bin opn_rst[no_op=>rst_op]                         71          1          -    Covered              
+#         bin rst_opn[rst_op=>add_op]                        30          1          -    Covered              
+#         bin rst_opn[rst_op=>no_op]                         64          1          -    Covered              
+#         bin sngl_mul[xor_op=>mul_op]                       18          1          -    Covered              
+#         bin sngl_mul[and_op=>mul_op]                       13          1          -    Covered              
+#         bin sngl_mul[add_op=>mul_op]                       13          1          -    Covered              
+#         bin sngl_mul[no_op=>mul_op]                        31          1          -    Covered              
+#         bin mul_sngl[mul_op=>xor_op]                       19          1          -    Covered              
+#         bin mul_sngl[mul_op=>and_op]                       11          1          -    Covered              
+#         bin mul_sngl[mul_op=>add_op]                       16          1          -    Covered              
+#         bin mul_sngl[mul_op=>no_op]                        34          1          -    Covered              
+#         bin twoops[add_op[*2]]                             93          1          -    Covered              
+#         bin twoops[no_op[*2]]                             189          1          -    Covered              
+#         bin manymult                                      331          1          -    Covered              
+#  TYPE /top/coverage_i/zeros_or_ones_on_ops            100.00%        100          -    Covered              
+#     covered/total bins:                                    19         19          -                      
+#     missing/total bins:                                     0         19          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint all_ops                                100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint a_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint b_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross op_00_FF                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 9          9          -                      
+#         missing/total bins:                                 0          9          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/top/coverage_i/c_00_FF         100.00%        100          -    Covered              
+#     covered/total bins:                                    19         19          -                      
+#     missing/total bins:                                     0         19          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint all_ops                                100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         ignore_bin null_ops                               884                     -    Occurred             
+#         bin auto[add_op]                                  202          1          -    Covered              
+#         bin auto[and_op]                                  171          1          -    Covered              
+#         bin auto[xor_op]                                  192          1          -    Covered              
+#         bin auto[mul_op]                                  547          1          -    Covered              
+#     Coverpoint a_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zeros                                         559          1          -    Covered              
+#         bin others                                        951          1          -    Covered              
+#         bin ones                                          486          1          -    Covered              
+#     Coverpoint b_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zeros                                         516          1          -    Covered              
+#         bin others                                       1030          1          -    Covered              
+#         bin ones                                          450          1          -    Covered              
+#     Cross op_00_FF                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 9          9          -                      
+#         missing/total bins:                                 0          9          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin add_00                                     86          1          -    Covered              
+#             bin add_FF                                     95          1          -    Covered              
+#             bin and_00                                     81          1          -    Covered              
+#             bin and_FF                                     68          1          -    Covered              
+#             bin xor_00                                     90          1          -    Covered              
+#             bin xor_FF                                     90          1          -    Covered              
+#             bin mul_00                                    289          1          -    Covered              
+#             bin mul_FF                                    214          1          -    Covered              
+#             bin mul_max                                    30          1          -    Covered              
+#         Illegal and Ignore Bins:
+#             ignore_bin others_only                        238                     -    Occurred             
+# 
+# COVERGROUP COVERAGE:
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /top/coverage_i/op_cov                          100.00%        100          -    Covered              
+#     covered/total bins:                                    21         21          -                      
+#     missing/total bins:                                     0         21          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint op_set                                 100.00%        100          -    Covered              
+#         covered/total bins:                                21         21          -                      
+#         missing/total bins:                                 0         21          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/top/coverage_i/oc              100.00%        100          -    Covered              
+#     covered/total bins:                                    21         21          -                      
+#     missing/total bins:                                     0         21          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint op_set                                 100.00%        100          -    Covered              
+#         covered/total bins:                                21         21          -                      
+#         missing/total bins:                                 0         21          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin single_cycle[no_op]                           380          1          -    Covered              
+#         bin single_cycle[add_op]                          202          1          -    Covered              
+#         bin single_cycle[and_op]                          171          1          -    Covered              
+#         bin single_cycle[xor_op]                          192          1          -    Covered              
+#         bin single_cycle[rst_op]                          504          1          -    Covered              
+#         bin multi_cycle                                   547          1          -    Covered              
+#         bin opn_rst[add_op=>rst_op]                        28          1          -    Covered              
+#         bin opn_rst[no_op=>rst_op]                         71          1          -    Covered              
+#         bin rst_opn[rst_op=>add_op]                        30          1          -    Covered              
+#         bin rst_opn[rst_op=>no_op]                         64          1          -    Covered              
+#         bin sngl_mul[xor_op=>mul_op]                       18          1          -    Covered              
+#         bin sngl_mul[and_op=>mul_op]                       13          1          -    Covered              
+#         bin sngl_mul[add_op=>mul_op]                       13          1          -    Covered              
+#         bin sngl_mul[no_op=>mul_op]                        31          1          -    Covered              
+#         bin mul_sngl[mul_op=>xor_op]                       19          1          -    Covered              
+#         bin mul_sngl[mul_op=>and_op]                       11          1          -    Covered              
+#         bin mul_sngl[mul_op=>add_op]                       16          1          -    Covered              
+#         bin mul_sngl[mul_op=>no_op]                        34          1          -    Covered              
+#         bin twoops[add_op[*2]]                             93          1          -    Covered              
+#         bin twoops[no_op[*2]]                             189          1          -    Covered              
+#         bin manymult                                      331          1          -    Covered              
+#  TYPE /top/coverage_i/zeros_or_ones_on_ops            100.00%        100          -    Covered              
+#     covered/total bins:                                    19         19          -                      
+#     missing/total bins:                                     0         19          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint all_ops                                100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint a_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint b_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross op_00_FF                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 9          9          -                      
+#         missing/total bins:                                 0          9          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/top/coverage_i/c_00_FF         100.00%        100          -    Covered              
+#     covered/total bins:                                    19         19          -                      
+#     missing/total bins:                                     0         19          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint all_ops                                100.00%        100          -    Covered              
+#         covered/total bins:                                 4          4          -                      
+#         missing/total bins:                                 0          4          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         ignore_bin null_ops                               884                     -    Occurred             
+#         bin auto[add_op]                                  202          1          -    Covered              
+#         bin auto[and_op]                                  171          1          -    Covered              
+#         bin auto[xor_op]                                  192          1          -    Covered              
+#         bin auto[mul_op]                                  547          1          -    Covered              
+#     Coverpoint a_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zeros                                         559          1          -    Covered              
+#         bin others                                        951          1          -    Covered              
+#         bin ones                                          486          1          -    Covered              
+#     Coverpoint b_leg                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zeros                                         516          1          -    Covered              
+#         bin others                                       1030          1          -    Covered              
+#         bin ones                                          450          1          -    Covered              
+#     Cross op_00_FF                                    100.00%        100          -    Covered              
+#         covered/total bins:                                 9          9          -                      
+#         missing/total bins:                                 0          9          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin add_00                                     86          1          -    Covered              
+#             bin add_FF                                     95          1          -    Covered              
+#             bin and_00                                     81          1          -    Covered              
+#             bin and_FF                                     68          1          -    Covered              
+#             bin xor_00                                     90          1          -    Covered              
+#             bin xor_FF                                     90          1          -    Covered              
+#             bin mul_00                                    289          1          -    Covered              
+#             bin mul_FF                                    214          1          -    Covered              
+#             bin mul_max                                    30          1          -    Covered              
+#         Illegal and Ignore Bins:
+#             ignore_bin others_only                        238                     -    Occurred             
+# 
+# TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+# 
+# Total Coverage By Instance (filtered view): 100.00%
+# 
+# End time: 17:10:09 on Dec 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit
+quit -sim
+# End time: 17:11:00 on Dec 15,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 1
+cd ..
+ls
+# 02_Conventional_Testbench        15_Talking_Objects                  
+# 03_Interfaces_and_BFMs           16_Analysis_Ports_In_the_Testbench  
+# 05_Classes_and_Extension         17_Interthread_Communication        
+# 06_Polymorphism                  18_Put_and_Get_in_Action            
+# 07_Static_Methods                19_UVM_Reporting                    
+# 08_Parameterized_Classes         20_Deep_Operations                  
+# 09_Factory_Pattern               21_UVM_Transactions                 
+# 10_An_Object_Oriented_Testbench  22_UVM_Agents                       
+# 11_UVM_Test                      23_UVM_Sequences                    
+# 12_UVM_Components                LICENSE-2.0.txt                     
+# 13_UVM_Environments              README.txt                          
+cd 08_Parameterized_Classes
+ls
+# 01_memory_example  02_static  03_instantiated    
+cd 01_memory_example
+do run.do
+# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 17:18:34 on Dec 15,2023
+# vlog -reportprogress 300 ram.sv top.sv 
+# -- Compiling module RAM
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:18:34 on Dec 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -voptargs=""+acc"" top 
+# Start time: 17:18:34 on Dec 15,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.RAM(fast)
+# awidth: 8  dwidth 16
+quit -sim
+# End time: 17:21:31 on Dec 15,2023, Elapsed time: 0:02:57
+# Errors: 20, Warnings: 0
+cd ..
+ls
+# 01_memory_example  02_static  03_instantiated    
+cd ../09_Factory_Pattern
+ls
+# .DS_Store  factory.sv  run.do  sv.f          
+cat sv.f
+# factory.sv
+# 
+# 
+# 
+head 10 sv.f
+# invalid command name "head"
