@@ -1,0 +1,15 @@
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\defines.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\ex.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\ex_mem.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\hilo_reg.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\id.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\id_ex.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\if_id.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\inst_rom.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\mem.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\mem_wb.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\openmips.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\openmips_min_sopc.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\openmips_min_sopc_tb.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\pc_reg.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter6\regfile.v

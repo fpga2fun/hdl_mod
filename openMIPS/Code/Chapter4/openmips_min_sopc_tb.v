@@ -55,4 +55,11 @@ module openmips_min_sopc_tb();
 		.rst(rst)	
 	);
 
+//  initial begin $readmemh ( "inst_rom.data", openmips_min_sopc_tb.openmips_min_sopc0.inst_rom0.inst_mem ); end  
+//  integer idx;
+  initial begin
+    $dumpfile("wave.vcd");        //生成的vcd文件名称
+    $dumpvars;    //tb模块名称
+  //   for (idx = 0; idx < 15; idx = idx + 1) $dumpvars(0, inst_fetch0.rom0.rom[idx]);  
+   end  
 endmodule

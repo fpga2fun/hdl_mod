@@ -26,7 +26,7 @@
 // File:    id.v
 // Author:  Lei Silei
 // E-mail:  leishangwen@163.com
-// Description: ÒëÂë½×¶Î
+// Description: è¯‘ç é˜¶æ®µ
 // Revision: 1.0
 //////////////////////////////////////////////////////////////////////
 
@@ -38,12 +38,12 @@ module id(
 	input wire[`InstAddrBus]			pc_i,
 	input wire[`InstBus]          inst_i,
 
-	//´¦ÓÚÖ´ĞĞ½×¶ÎµÄÖ¸ÁîÒªĞ´ÈëµÄÄ¿µÄ¼Ä´æÆ÷ĞÅÏ¢
+	//å¤„äºæ‰§è¡Œé˜¶æ®µçš„æŒ‡ä»¤è¦å†™å…¥çš„ç›®çš„å¯„å­˜å™¨ä¿¡æ¯
 	input wire										ex_wreg_i,
 	input wire[`RegBus]						ex_wdata_i,
 	input wire[`RegAddrBus]       ex_wd_i,
 	
-	//´¦ÓÚ·Ã´æ½×¶ÎµÄÖ¸ÁîÒªĞ´ÈëµÄÄ¿µÄ¼Ä´æÆ÷ĞÅÏ¢
+	//å¤„äºè®¿å­˜é˜¶æ®µçš„æŒ‡ä»¤è¦å†™å…¥çš„ç›®çš„å¯„å­˜å™¨ä¿¡æ¯
 	input wire										mem_wreg_i,
 	input wire[`RegBus]						mem_wdata_i,
 	input wire[`RegAddrBus]       mem_wd_i,
@@ -51,13 +51,13 @@ module id(
 	input wire[`RegBus]           reg1_data_i,
 	input wire[`RegBus]           reg2_data_i,
 
-	//ËÍµ½regfileµÄĞÅÏ¢
+	//é€åˆ°regfileçš„ä¿¡æ¯
 	output reg                    reg1_read_o,
 	output reg                    reg2_read_o,     
 	output reg[`RegAddrBus]       reg1_addr_o,
 	output reg[`RegAddrBus]       reg2_addr_o, 	      
 	
-	//ËÍµ½Ö´ĞĞ½×¶ÎµÄĞÅÏ¢
+	//é€åˆ°æ‰§è¡Œé˜¶æ®µçš„ä¿¡æ¯
 	output reg[`AluOpBus]         aluop_o,
 	output reg[`AluSelBus]        alusel_o,
 	output reg[`RegBus]           reg1_o,
@@ -121,23 +121,23 @@ module id(
 		  						alusel_o <= `EXE_RES_LOGIC;		reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;	
 		  						instvalid <= `InstValid;	
 								end 
-								`EXE_SLLV: begin
-									wreg_o <= `WriteEnable;		aluop_o <= `EXE_SLL_OP;
+							`EXE_SLLV: begin
+								wreg_o <= `WriteEnable;		aluop_o <= `EXE_SLL_OP;
 		  						alusel_o <= `EXE_RES_SHIFT;		reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
-		  						instvalid <= `InstValid;	
+		  					i	nstvalid <= `InstValid;	
 								end 
-								`EXE_SRLV: begin
-									wreg_o <= `WriteEnable;		aluop_o <= `EXE_SRL_OP;
+							`EXE_SRLV: begin
+								wreg_o <= `WriteEnable;		aluop_o <= `EXE_SRL_OP;
 		  						alusel_o <= `EXE_RES_SHIFT;		reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
 		  						instvalid <= `InstValid;	
 								end 					
-								`EXE_SRAV: begin
-									wreg_o <= `WriteEnable;		aluop_o <= `EXE_SRA_OP;
+							`EXE_SRAV: begin
+								wreg_o <= `WriteEnable;		aluop_o <= `EXE_SRA_OP;
 		  						alusel_o <= `EXE_RES_SHIFT;		reg1_read_o <= 1'b1;	reg2_read_o <= 1'b1;
 		  						instvalid <= `InstValid;			
 		  						end			
-								`EXE_SYNC: begin
-									wreg_o <= `WriteDisable;		aluop_o <= `EXE_NOP_OP;
+							`EXE_SYNC: begin
+								wreg_o <= `WriteDisable;		aluop_o <= `EXE_NOP_OP;
 		  						alusel_o <= `EXE_RES_NOP;		reg1_read_o <= 1'b0;	reg2_read_o <= 1'b1;
 		  						instvalid <= `InstValid;	
 								end								  									
@@ -149,7 +149,7 @@ module id(
 						end
 					endcase	
 					end									  
-		  	`EXE_ORI:			begin                        //ORIÖ¸Áî
+		  	`EXE_ORI:			begin                        //ORIæŒ‡ä»¤
 		  		wreg_o <= `WriteEnable;		aluop_o <= `EXE_OR_OP;
 		  		alusel_o <= `EXE_RES_LOGIC; reg1_read_o <= 1'b1;	reg2_read_o <= 1'b0;	  	
 					imm <= {16'h0, inst_i[15:0]};		wd_o <= inst_i[20:16];

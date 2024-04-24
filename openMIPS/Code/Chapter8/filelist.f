@@ -1,0 +1,17 @@
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\ctrl.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\defines.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\div.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\ex.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\ex_mem.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\hilo_reg.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\id.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\id_ex.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\if_id.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\inst_rom.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\mem.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\mem_wb.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\openmips.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\openmips_min_sopc.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\openmips_min_sopc_tb.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\pc_reg.v
+D:\all_code\verilog_module\openMIPS\Code\Chapter8\regfile.v
