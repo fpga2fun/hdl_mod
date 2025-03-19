@@ -1,12 +1,21 @@
-#include <stdio.h> 
-int main(int argc, char *argv[]) 
-{ 
-    int iNum = 0x64; 
-    int *ptr = &iNum; 
-    int **pPtr = &ptr; 
+#include <stdio.h>
+#include <stdlib.h>
 
-    printf("&iNum = 0x%p, iNum = 0x%x\n", (void*)&iNum, iNum); 
-    printf("&ptr = 0x%p, ptr = 0x%p, *ptr = 0x%x\n", (void*)&ptr, (void*)ptr, *ptr); 
-    printf("&pPtr = 0x%p, pPtr = 0x%p, *pPtr = 0x%p, **pPtr = 0x%x\n", (void*)&pPtr, (void*)pPtr, (void*)*pPtr, **pPtr); 
-    return 0; 
+int compare_int(const void *e1, const void *e2) 
+{ 
+    return (*((int *)e1) - *((int *)e2)); 
+}
+
+int main() {
+    int arr[] = {5, 2, 9, 1, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    qsort(arr, n, sizeof(int), compare_int);
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
 }
