@@ -1,0 +1,3 @@
+import "DPI-C" function real fabs(input real r);
+...
+initial $display("fabs(0) = %f", fabs(-1.0));

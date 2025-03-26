@@ -1,0 +1,67 @@
+///////////////////////////////////////////////////////
+// Purpose: DUT for Chap_2_Data_Types/problem13
+//          Contains 1 bug/register
+// Author: Greg Tumbush
+//
+// REVISION HISTORY:
+// $Log: config_reg_buggy_vcs.svp,v $
+// Revision 1.1  2011/05/28 19:48:17  tumbush.tumbush
+// Check into cloud repository
+//
+// Revision 1.1  2011/03/17 15:56:34  Greg
+// Initial check-in
+//
+// Revision 1.1  2011/03/15 18:53:53  Greg
+// Incorporated support for VCS
+//
+// Revision 1.1  2011/03/15 17:54:08  Greg
+// Initial check in
+//
+///////////////////////////////////////////////////////
+  module config_reg(
+		input  logic clk,
+		input  logic reset,
+		input  logic write,
+		input  logic [15:0] data_in,
+		input  logic [2:0] address,
+		output logic [15:0] data_out
+);
+   
+`protected
+]/\ZZaN6dSXHc[/KMPULCa^:dP[+f:HNN]LQC]^\;./(_eZ2gYJL.9c[Z\KG9@C=
+ZI>@;?O:^=.LJ:RA6_67+-2c:/F#WN;Pg/@KMJX]EJN0bb/&&ZG&c26bO6Q>6)OJ
+@<J1IOQa>)XT@8_]a-3L)#;+Q5bea?V/]/7WR0gA^K1a]W@RV,#U4]<8fggX5@G/
+H7A139+KARb13>;eG]M#ZEgW23daLWL3Q[C^LeO4B-WW5&+VT.0&gH>R8L>SE:#Q
+VFN(PF;7dRCfeK>HNZB68F1<9OT3/)>^>eGR>8f/Z8TJ(4NQ6XYMH;14J^KBZ/D.
+0&0-4]Y[M1/.O498A3d1K3FFPf,ND;JK5K]#1#ZOc#>DJd?A#>fYU44YX;]=RE/5
+)KEf<H@?egA&b[#2?4L57-^EK77Q/K,f4]B4_g-Sf(4NX2<V0/eSO&N()8;V=KeR
+VbZ^e8#7B#(\AbX#,BfZ@RJGEeE(/d_I2<93\Z8@@5O\gI[5F2b+5H9MUGFP7]O;
+4bNBN]-S0N_V^cQ5QB#A8W;5M.IIQAa;]_8d(B^:^gD;+-L7W,QfCK>Y7>O8LGSC
+,&7?S7,5:<65fV__3=1G)[6a[eAg.<U&SM?_BAT3df:,<ZH\X\cf7\1[eb-dLSNM
+E8-cF[6K.)5)Sf1G-A4=;CR(3NXP+7&H,Mbf:JaEI)4NPIRZ^G8AFCNLM-:N@]b\
+YX=Wd8B(#Pc#:II]b^a=Qe?38A5OD2ebT6.a^4]S:B;DLF^8D[MCL=1@HYM@?H<O
+gYZ.0V5SC6#aEbJM.)Ff(K0.Z]UaaHgA0)J/g_F^3fM);_2Y=e9d(IZ1F@X;fE=b
+QD2<L13&GPcJ](C#KA]:D0E@V^PaJX1NEV1/N/<&;)Vfg?,)V,b6_c2?GJ6X;2WG
+L+W@/b7.5^HGWQLcedb7BWW:5S]^3dA?[(TEaZcc3\MeY35#JJ^<^LB^N&E#g76L
+)A>&a->#8^K-aU:0a<#X5(+X?C^ZP)gSC9W)d+M/J7&@(7<a3FBQIXe@L.5/0UA9
+LYURGJ:A5\GS@M&_0]GUXL@8<--:N2G8(ZYO.HdaXW1Ze2(6?]P/KJ2H+AXR[#:+
+8a70YA=Eb\c1;09g;P__0/CWeEBR7Z^IC>K;(Q+g4T+T#5:cSfT.?]P6V9O+UQ5a
+(#V>C<,>&^<O8TfV^)I-6;A@?-+#2EVRSN4+e53,QCT,9g.BQ_]W<0bg8#76B(WI
+c4ULgQ9gZ/#\E7NF/>669RJAVXNRaS5>QVM.2M\6I;>(3b2GY=gcfKa(^.R+HM@Y
+#<P#7T@]R]BcE6D<IB9G?dfc/-M/6NX-&6VfZc+X(=(2Qaff4Ub/\Pe_b1O)O?PC
+eB<gTAEF<HJH;62B4R7U9R<c.Lf^dL>@^aD53?[Y_?T0^BHa4@E7HX,)/9aJMH;b
+^MSKb_69KIe<?I7c&S_\^4-A=b)RI,U8fJ/N<Z>:P]b)>a0R30ERO+21:/4]:;9@
++g+8<J;(RIF@T+:0HV0)USQFfG)I3Ld(X17dV9MMBaa#[bX;P_PXS<YO@FZ2FKY:
+^P_XW3KJL#[4.]b/Y0A1MS,9V&.4?.1,TKb9\;M2VKF)e5&6]e)5MF/A@Z9BfS()
+We^T:EadFI.4aG2A#UR1?USUJO&JO0,a5)K3.VWK^MXD+?M^<DML[+3@d[@#Te=\
+M=[baI4;=DGL0d-O\I&aGeRL@;V[R]Tgfb4N7I1)cbNDXZL;c,4655,>QF:(5&VB
+L_ecXEXSF)TZN&_^:T8^-49SLI:>M^.\.1g?Z-FbJW2PDNbDGD[Y9L,&70+g;^52
+,F/fI3S323gbC9RSZJX8P^)e&aPTSUE3O-\P707UG.R.49[5<S>AJ91;<LH9>+aB
+SZQ.1&+.VJST3:NB/c3C8OP3+LS=KZJ]a_V4?f<NF8K)1/[H2@;M3TX&\9YJ/fVH
+)?Se^SHg@_Y[@;0:>^Q:dZ:&/-VbQY0Y18_<OOD-,ZS),#J3O#S<K#0#c<WcbFA]
+.-0Z&04gN2.@T/.Pb;:FH.9VXW@U+1>G8WU+dUfLL],)A$
+`endprotected
+   
+
+endmodule // test
+

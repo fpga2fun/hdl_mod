@@ -1,0 +1,3 @@
+program automatic initialization; // 漏洞被修复
+...
+endprogram

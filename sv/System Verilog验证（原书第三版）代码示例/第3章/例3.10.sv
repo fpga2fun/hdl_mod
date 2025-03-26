@@ -1,0 +1,3 @@
+task t3(a, b, output bit [15:0] u, v); // 简写（偷懒）的声明方式
+...
+endtask

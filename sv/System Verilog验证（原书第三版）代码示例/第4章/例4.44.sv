@@ -1,0 +1,31 @@
+module atm_router_ports(
+ //4 x Level 1 Utopia ATM layer Rx Interfaces
+Rx_clk_0, Rx_clk_1, Rx_clk_2, Rx_clk_3,
+ Rx_data_0, Rx_data_1, Rx_data_2, Rx_data_3,
+ Rx_soc_0, Rx_soc_1, Rx_soc_2, Rx_soc_3,
+ Rx_en_0, Rx_en_1, Rx_en_2, Rx_en_3,
+ Rx_clav_0, Rx_clav_1, Rx_clav_2, Rx_clav_3,
+ //4 x Level 1 Utopia ATM layer Tx Interfaces
+ Tx_clk_0, Tx_clk_1, Tx_clk_2, Tx_clk_3,
+ Tx_data_0, Tx_data_1, Tx_data_2, Tx_data_3,
+ Tx_soc_0, Tx_soc_1, Tx_soc_2, Tx_soc_3,
+ Tx_en_0, Tx_en_1, Tx_en_2, Tx_en_3,
+ Tx_clav_0, Tx_clav_1, Tx_clav_2, Tx_clav_3,
+ // 其他控制信号
+ rst, clk);
+ //4 x Level 1 Utopia Rx Interfaces
+ output Rx_clk_0, Rx_clk_1, Rx_clk_2, Rx_clk_3;
+ input [7:0] Rx_data_0,Rx_data_1,Rx_data_2,Rx_data_3;
+ input Rx_soc_0, Rx_soc_1, Rx_soc_2, Rx_soc_3;
+ output Rx_en_0, Rx_en_1, Rx_en_2, Rx_en_3;
+ input Rx_clav_0,Rx_clav_1,Rx_clav_2,Rx_clav_3;
+ //4 x Level 1 Utopia Tx Interfaces
+ output Tx_clk_0, Tx_clk_1, Tx_clk_2, Tx_clk_3;
+ output [7:0] Tx_data_0,Tx_data_1,Tx_data_2,Tx_data_3;
+ output Tx_soc_0, Tx_soc_1, Tx_soc_2, Tx_soc_3;
+ output Tx_en_0, Tx_en_1, Tx_en_2, Tx_en_3;
+ input Tx_clav_0,Tx_clav_1,Tx_clav_2,Tx_clav_3;
+ // 其他控制信号
+ input rst, clk;
+ ...
+endmodule

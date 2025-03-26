@@ -1,0 +1,17 @@
+########################################################
+## Purpose: Makefile for Chap_2_Data_Types/exercise7
+## Author: Greg Tumbush
+##
+## REVISION HISTORY:
+## $Log: Makefile,v $
+## Revision 1.1  2011/05/28 19:48:11  tumbush.tumbush
+## Check into cloud repository
+##
+## Revision 1.1  2011/05/04 17:37:41  Greg
+## Initial check-in
+##
+#########################################################
+FILES = test.sv
+TOPLEVEL = test
+
+include ../../Makefiles/non_DPI/Makefile_non_DPI

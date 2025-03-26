@@ -1,0 +1,3 @@
+module test_with_mp (arb_if.TEST arbif);
+ ...
+endmodule
