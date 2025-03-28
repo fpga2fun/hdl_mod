@@ -1,4 +1,4 @@
-initital begin
+initial begin
  ascend = '{0,1,2,3};
  $display("%p",ascend); //'{0，1，2，3}
  ascend = '{4{8}};

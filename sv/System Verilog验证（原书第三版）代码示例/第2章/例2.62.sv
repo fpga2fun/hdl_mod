@@ -11,7 +11,7 @@ initial begin
   $display(s.substr(2, 5));  // 显示: EE-1
 
   // 创建临时字符串，注意格式
-  my_log_rtn($psprintf("%s %5d", s, 42));
+  my_log($psprintf("%s %5d", s, 42));
 end
 
 function void my_log(string message);
