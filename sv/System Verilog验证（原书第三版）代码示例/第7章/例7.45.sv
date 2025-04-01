@@ -1,0 +1,12 @@
+Producer: before put(1)
+Consumer: before get
+Consumer: after get(1)
+Consumer: before get
+Producer: after get(-1)
+Producer: before put(2)
+Consumer: after get(2)
+Consumer: before get
+Producer: after get(-2)
+Producer: before put(3)
+Consumer: after get(3)
+Producer: after get(-3)

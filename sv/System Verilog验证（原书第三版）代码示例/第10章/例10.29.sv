@@ -1,0 +1,3 @@
+program automatic test #(NUM_XI = 2, BIT_WIDTH = 8);
+ virtual X_if #(.BIT_WIDTH(BIT_WIDTH)).TB vxi[NUM_XI];
+...

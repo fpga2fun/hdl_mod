@@ -1,0 +1,3 @@
+module arb_with_mp (arb_if.DUT arbif);
+ ...
+endmodule

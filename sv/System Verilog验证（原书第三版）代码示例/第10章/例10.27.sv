@@ -1,0 +1,3 @@
+interface X_if #(BIT_WIDTH = 8) (input logic clk);
+ logic [BIT_WIDTH-1:0] din, dout;
+...

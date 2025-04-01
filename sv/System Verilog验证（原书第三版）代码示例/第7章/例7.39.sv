@@ -1,0 +1,6 @@
+Producer: before put(1)
+Producer: before put(2)
+Producer: before put(3)
+Consumer: after get(1)
+Consumer: after get(2)
+Consumer: after get(3)

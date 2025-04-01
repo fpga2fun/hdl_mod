@@ -1,0 +1,3 @@
+module uses_a_port(inout bit not_connected);
+ ...
+endmodule

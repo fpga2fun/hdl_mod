@@ -1,0 +1,67 @@
+ArchitectureFile $env(FILE_CONF)
+
+vcs_exec_command {make all}
+
+simxl -enable true
+simxl_set_hwtop -instance tb_top.zebu
+
+clock_delay -auto_tolerance true -module zebu_wrap
+
+debug -verdi_db t -waveform_reconstruction t -waveform_reconstruction_params simzilla=t -offline_debug t
+
+clock_config -accuracy 32
+
+xtors -use_zebu_ip_root 1
+
+synthesis_preferences -enable_wls true
+
+synthesis_preferences -bundle_mode SIZE=100
+
+synthesis -blackbox {dummy_reg}
+
+design -convert_strength true
+design -convert_switches true
+
+memories -zmem_port_threshold 4
+memories -zmem_size_threshold 128
+memories -zmem -set_default_type OPTIMIZE_CAPACITY
+
+design_size -number_of_modules 1
+#design_size -mode AUTO
+
+#clustering -resource_usage SAFE
+#clustering -resource_usage MEDIUM
+#clustering -resource_usage_details lut=50,reg=25,bram=70,qiwc=75
+#clustering -resource_usage_details lut=50,reg=22,bram=50,qiwc=75
+#clustering -resource_usage_details lut=50,reg=22,bram=50,qiwc=50
+clustering -resource_usage_details lut=40,reg=22,bram=50,qiwc=45
+##reduce LUT6 
+#synthesis -advanced_command {Compile:TargetLUT6Ratio = 0.2}
+#synthesis -advanced_command {Compile:MinLut6ToRemap = 1000}
+#optimization -lut_costs {8 9 10 12 15}
+
+
+ztopbuild -advanced_command {cluster set -max_fill_lut6 20}
+
+nfs_setting -max_retries 1000 -delay 1000 -access_level 1
+
+simxl_allow_concurrent -module zebu_clk_rst_if -tf {time_out} -count 10
+simxl_allow_concurrent -module zebu_vs_simple_rst_and_clk_udpi -tf {ZEBU_VS_SNPS_UDPI__runClk_sw} -count 10
+zemi3 -module {xtor_amba_master_axi4_svs} -max_out_port_width 512 -max_in_port_width 512
+zemi3 -module {xtor_amba_slave_axi4_svs} -max_out_port_width 512 -max_in_port_width 512
+
+## FPGA parff, pdm
+fpga -enable_parff true
+fpga -use_local_disk true  -local_disk_path /tmp
+
+fpga -inter_die_tdm true -inter_die_tdm_params strategy=PDM_DIRECT
+#fpga -enable_parff true -advanced_command_file ./script/my_mdtmx_parff.xcui
+
+#grid_cmd -queue {ZebuSynthesis} -local -njobs 50
+#grid_cmd -queue {Zebu} -local -njobs 10
+
+grid_cmd -queue {Zebu}          -submit {bsub -I -J simxl_001 -R "rusage[mem=50000]" -q normal} -delete {} -njobs {50}
+grid_cmd -queue {ZebuSynthesis} -submit {bsub -I -J simxl_002 -R "rusage[mem=50000]" -q normal} -delete {} -njobs {50}
+grid_cmd -queue {ZebuIse}       -submit {bsub -I -J simxl_003 -R "rusage[mem=50000]" -q normal} -delete {} -njobs {50}
+
+

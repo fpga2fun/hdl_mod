@@ -1,0 +1,9 @@
+Provide to the students the following files:
+sram_control.sv
+asynch.vhd
+package_timing.vhd
+package_utility.vhd
+Makefile
+
+
+

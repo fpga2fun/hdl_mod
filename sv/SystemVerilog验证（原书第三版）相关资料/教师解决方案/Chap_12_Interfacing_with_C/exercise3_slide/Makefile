@@ -1,0 +1,87 @@
+################################################################################
+## Purpose: Makefile to run a C++/SystemVerilog simulation
+##          for Chap_12_Interfacing_with_C/exercise3_slide
+## Author: Chris Spear, Greg Tumbush, and Tim Pylant
+##
+## REVISION HISTORY:
+## $Log: Makefile,v $
+## Revision 1.1  2011/09/27 19:39:53  tumbush.tumbush
+## Initial check-in
+##
+##
+###############################################################################
+CPPFILES = hello.cpp
+VFILES = hello.sv
+FILES = $(VFILES) $(CPPFILES)
+TOPLEVEL = hello
+
+help:
+	@echo "Make targets:"
+	@echo "> make vcs          # Compile and run with VCS"
+	@echo "> make vcsgui       # Compile and run with VCS GUI"
+	@echo "> make questa_gui   # Compile and run with Questa"
+	@echo "> make questa_batch # Compile and run with Questa"
+	@echo "> make ius      	   # Compile and run with IUS"
+	@echo "> make iusgui   	   # Compile and run with IUS GUI"
+	@echo "> make clean    	   # Clean up all intermediate files"
+	@echo "> make tar      	   # Create a tar file for the current directory"
+	@echo "> make help     	   # This message"
+
+#############################################################################
+# VCS section
+
+VCS_FLAGS = -sverilog -debug_all -l comp.log
+
+vcs:	simv
+	./simv -l sim.log
+
+vcsgui:	simv
+	./simv -l sim.log -gui
+
+simv:   ${FILES}
+	vcs ${VCS_FLAGS} ${FILES}
+
+
+#############################################################################
+# Questa section
+questa_gui: ${FILES} clean
+	vlib work
+	vmap work work
+	vlog ${VFILES}
+	g++ -m32 -fPIC -DQUESTA -g -W -shared -I$(QUESTASIM)/include $(CPPFILES) -o questa.so
+	vsim -novopt -do "view wave;add wave -radix hex -r *;run -all" ${TOPLEVEL} -sv_lib questa
+
+questa_batch: ${FILES} clean
+	vlib work
+	vmap work work
+	vlog ${VFILES}
+	g++ -m32 -fPIC -DQUESTA -g -W -shared -I$(QUESTASIM)/include $(CPPFILES) -o questa.so
+	vsim -c -novopt -do "run -all" ${TOPLEVEL} -sv_lib questa
+
+##############################################################################################
+# Cadence IUS section
+IUS_FLAGS = -debug -gui -input probe.tcl
+ius: ${FILES}
+	irun ${FILES}
+
+iusgui: ${FILES}
+	irun ${IUS_FLAGS} ${FILES}
+
+#############################################################################
+# Housekeeping
+
+DIR = $(shell basename `pwd`)
+
+tar:	clean
+	cd ..; \
+	tar cvf ${DIR}.tar ${DIR}
+
+clean:
+	@# VCS Stuff
+	@rm -rf simv* csrc* *.log *.vpd .vcsmx_rebuild vc_hdrs.h DVEfiles
+	@# Questa stuff
+	@rm -rf work *.so transcript vsim.wlf
+	@# IUS Stuff
+	@rm -rf INCA_libs *shm .simvision *.log *.key 
+	@# Unix stuff
+	@rm -rf  *~ core.*

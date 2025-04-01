@@ -1,0 +1,3 @@
+function void create(ref Transaction tr);
+...
+endfunction : create
