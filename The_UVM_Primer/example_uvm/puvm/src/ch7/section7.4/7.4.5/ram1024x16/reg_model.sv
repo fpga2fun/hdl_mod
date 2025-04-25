@@ -57,12 +57,11 @@ class reg_model extends uvm_reg_block;
       invert.configure(this, null, "invert");
       invert.build();
       default_map.add_reg(invert, 'h9, "RW");
-      
+
       counter= reg_counter::type_id::create("counter", , get_full_name());
       counter.configure(this, null, "counter");
       counter.build();
       default_map.add_reg(counter, 'h5, "RW");
-
       mm = my_memory::type_id::create("mm", , get_full_name());
       mm.configure(this, "stat_blk.ram1024x16_inst.array");
       default_map.add_mem(mm, 'h100);

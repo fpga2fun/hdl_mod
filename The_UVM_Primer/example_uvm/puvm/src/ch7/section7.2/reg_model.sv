@@ -24,7 +24,6 @@ class reg_model extends uvm_reg_block;
 
    virtual function void build();
       default_map = create_map("default_map", 0, 2, UVM_BIG_ENDIAN, 0);
-
       invert = reg_invert::type_id::create("invert", , get_full_name());
       invert.configure(this, null, "");
       invert.build();
