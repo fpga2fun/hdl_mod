@@ -1,3 +1,0 @@
-read_verilog -sv -formal -overwrite {workspace}/test/DIDEtemp/user/src/Registers.v
-design -reset-vlog; proc;
-write_json {workspace}/netlist/Registers.json

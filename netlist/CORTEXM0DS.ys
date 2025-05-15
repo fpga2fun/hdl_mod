@@ -1,3 +1,0 @@
-read_verilog -sv -formal -overwrite {workspace}/arm_cotexM0/3f962-main/AT510-BU-98000-r1p0-00rel0/cortexm0_designstart/cores/cortexm0_designstart_r1p0/logical/cortexm0ds/verilog/CORTEXM0DS.v
-design -reset-vlog; proc;
-write_json {workspace}/netlist/CORTEXM0DS.json
