@@ -1,0 +1,4 @@
+icarus/
+netlist/
+*.vcd
+*.view
