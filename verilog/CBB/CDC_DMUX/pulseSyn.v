@@ -1,7 +1,5 @@
 
-`timescale 1ns/1ps
-
-
+`timescale 1ns/1ns
 module  CBB_PULSE_SYNCHRONIZER #(
         // ---- parameter define
         parameter P_EXTEN_EN		= "ENABLE",  //"ENABLE" or "DISABLE"
