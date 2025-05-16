@@ -50,7 +50,7 @@ module tb;
 
         repeat(60) begin
             @(posedge clk);
-            o_ready <= $random();
+            o_ready <= $random;
             ;
         end
         repeat(10) @(posedge clk);
