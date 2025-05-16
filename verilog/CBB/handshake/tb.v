@@ -22,9 +22,9 @@ module tb();
 
     //生成源时钟
     initial begin
-        period_source = {$random%1024};
+        period_source = 4;
         clk_source = 1'b0;
-        //	#({$random%1024});				//给一个随机相位，这样两个时钟就是完全异步的
+        	#($random%24);				//给一个随机相位，这样两个时钟就是完全异步的
         forever begin
             #period_source;
             clk_source = ~clk_source;
@@ -33,7 +33,7 @@ module tb();
 
     //生成目的时钟
     initial begin
-        period_dest = {$random%(period_source/2)};
+        period_dest = 25;
         clk_dest = 1'b0;
         //	#({$random%1024});				//给一个随机相位，这样两个时钟就是完全异步的
         forever begin
@@ -62,7 +62,7 @@ module tb();
         sig_pulse_source = 1'b0;
         sig_data_source = 0;
         @(negedge rst_dest);	//等待复位完成
-        repeat(10) begin		//随机生成脉冲信号，执行10次
+        repeat(100) begin		//随机生成脉冲信号，执行10次
             @(posedge clk_source);
             sig_pulse_source <= $random && (~sync_busy);	//反压上级
             //sig_pulse_source <= $random;
@@ -70,12 +70,12 @@ module tb();
             @(posedge clk_source);
             sig_pulse_source <= 1'b0;
         end
-        $stop();
+        $finish;
     end
 
     //例化被测试模块
     sync_handshake #(
-                       .SYNC_STAGE			(SYNC_STAGE			)
+                       .SYNC_STAGE			(SYNC_STAGE			),
                        .DATA_WIDTH			(DATA_WIDTH			)
                    )
                    u_sync_shake
@@ -90,7 +90,7 @@ module tb();
                        .sync_busy			(sync_busy			)
                    );
     initial begin
-        $dumpfile("tb.vcd");
+        $dumpfile("wave.vcd");
         $dumpvars(0, tb);
         #5000 $finish;
     end
