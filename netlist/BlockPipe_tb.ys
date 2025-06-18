@@ -1,4 +1,0 @@
-read_verilog -sv -formal -overwrite {workspace}/verilog/CBB/pipe/blockpipe.v
-read_verilog -sv -formal -overwrite {workspace}/verilog/CBB/pipe/tb.v
-design -reset-vlog; proc;
-write_json {workspace}/netlist/BlockPipe_tb.json

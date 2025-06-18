@@ -1,3 +1,0 @@
-read_verilog -sv -formal -overwrite {workspace}/The_UVM_Primer/uvmPrimeCodenew/03_Interfaces_and_BFMs/coverage.sv
-design -reset-vlog; proc;
-write_json {workspace}/netlist/coverage.json
