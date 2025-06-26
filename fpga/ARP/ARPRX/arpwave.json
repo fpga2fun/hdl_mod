@@ -1,0 +1,63 @@
+{
+    "signal": [
+        {
+            "name": "gmii_rx_clk",
+            "wave": "p.....................",
+            "node": "",
+            "phase": "0"
+        },
+        {
+            "name": "rst_n",
+            "wave": "01....................",
+            "node": "",
+            "phase": "0.5"
+        },
+        {
+            "name": "gmmi_rx_dv",
+            "wave": "0.1..................0",
+            "node": "",
+            "phase": "0.5"
+        },
+        {
+            "name": "gmii_rxd[7:0]",
+            "wave": "0.3....45...6..|...7..",
+            "node": "",
+            "data":["8'h55","8'hd5","8'hff","gmii_rxd","crc_data"],
+            "phase": "0.5"
+        },
+        {
+            "name": "arp_rx_done",
+            "wave": "0..............10.....",
+            "node": ""
+        },
+        {
+            "name": "arp_rx_type",
+            "wave": "0...........|1........",
+            "node": ""
+        },
+        {
+            "name": "src_mac",
+            "wave": "3............4........",
+            "node": "",
+            "data":["48'b0","src_mac"]
+        },
+        {
+            "name": "src_ip",
+            "wave": "3............4........",
+            "node": "",
+            "data":["32'b0","src_ip"]
+        }
+    ],
+    "edge": [
+
+    ],
+    "config": {
+        "hscale": 1
+    },
+    "head": {
+        "tick": 0
+    },
+    "foot": {
+        "tock": 1
+    }
+}
